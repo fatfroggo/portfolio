@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -20,11 +21,9 @@ export default function Home() {
       </div>
 
       <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+        <Link
+          href="/portfolio"
           className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
         >
           <h2 className={`mb-3 text-2xl text-black font-semibold`}>
             Portfolio{' '}
@@ -35,13 +34,11 @@ export default function Home() {
           <p className={`m-0 max-w-[30ch] text-black text-sm opacity-50`}>
             See example projects I have worked on using a variety of languages and frameworks
           </p>
-        </a>
+        </Link>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+        <Link
+          href="/contacts"
           className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
         >
           <h2 className={`mb-3 text-2xl text-black font-semibold`}>
             Contact{' '}
@@ -52,7 +49,7 @@ export default function Home() {
           <p className={`m-0 max-w-[30ch] text-black text-sm opacity-50`}>
             Links to stuff here
           </p>
-        </a>
+        </Link>
 
       </div>
     </main>
