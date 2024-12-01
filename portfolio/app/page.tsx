@@ -9,7 +9,6 @@ export default function Home() {
           Lily Baird
         </p>
       </div>
-
       <div className='place-self-end'>
         <Image
           src="/partyhatfrog.jpeg"
